@@ -59,7 +59,7 @@ def _output(domain, data):
 def whois(domain):
     
     response = _connect(domain)
-    print(repr(response))
+
     data = _parse(response)
     
     _output(domain, data)
